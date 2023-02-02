@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+}
+
+#mainBackground{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./images/City.jpeg);
+    background-position: center;
+    background-size: cover;
+}
