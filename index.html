@@ -9,7 +9,112 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="test"></div>
     <div id="mainBackground"></div>
+    <div id="weatherContent">
+        <div id="general">
+            <div></div>
+            <div id="location"></div>
+            <div id="genTemp"></div>
+            <button id="units">Display °C/°F</button>
+            <div id="genIcon"></div>
+            <div id="searchBar">
+                <input type="text" placeholder="Search Location">
+                <button id="searchButton"></button>
+            </div>
+        </div>
+        <div id="time">
+            <div id="date">Friday, 3rd Feb'23</div>
+            <div id="clock">10:30 AM</div>
+        </div>
+        <div id="specifics">
+            <div id="feelsLike">
+                <img src="./images/thermometer.svg" class="specIcon" alt="thermometer">
+                <div>
+                    <div class="specText">Feels Like</div>
+                    <div class="specTemp">60°F</div>
+                </div>
+            </div>
+            <div id="humidity">
+                <img src="./images/humid.svg" class="specIcon" alt="humidity">
+                <div>
+                    <div class="specText">Humidity</div>
+                    <div class="specHumid">60%</div>
+                </div>
+            </div>
+            <div id="rain">
+                <img src="./images/rain.svg" class="specIcon" alt="rain">
+                <div>
+                    <div class="specText">Chance of Rain</div>
+                    <div class="specRain">60%</div>
+                </div>
+            </div>
+            <div id="wind">
+                <img src="./images/windy.svg" class="specIcon" alt="wind">
+                <div>
+                    <div class="specText">Wind Speed</div>
+                    <div class="specWind">60 mph</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="weatherForecast">
+        <div class="weekday">
+            <div>Sunday</div>
+            <div class="hiLoTemp">
+                <div class="highTemp"></div>
+                <div class="lowTemp"></div>
+            </div>
+            <div class="weekIcon"></div>
+            <div class="hiLoTemp"></div>
+        </div>
+        <div class="weekday">
+            <div>Monday</div>
+            <div class="hiLoTemp">
+                <div class="highTemp"></div>
+                <div class="lowTemp"></div>
+            </div>
+            <div class="weekIcon"></div>
+        </div>
+        <div class="weekday">
+            <div>Tuesday</div>
+            <div class="hiLoTemp">
+                <div class="highTemp"></div>
+                <div class="lowTemp"></div>
+            </div>
+            <div class="weekIcon"></div>
+        </div>
+        <div class="weekday">
+            <div>Wednesday</div>
+            <div class="hiLoTemp">
+                <div class="highTemp"></div>
+                <div class="lowTemp"></div>
+            </div>
+            <div class="weekIcon"></div>
+        </div>
+        <div class="weekday">
+            <div>Thursday</div>
+            <div class="hiLoTemp">
+                <div class="highTemp"></div>
+                <div class="lowTemp"></div>
+            </div>
+            <div class="weekIcon"></div>
+        </div>
+        <div class="weekday">
+            <div>Friday</div>
+            <div class="hiLoTemp">
+                <div class="highTemp"></div>
+                <div class="lowTemp"></div>
+            </div>
+            <div class="weekIcon"></div>
+        </div>
+        <div class="weekday">
+            <div>Saturday</div>
+            <div class="hiLoTemp">
+                <div class="highTemp"></div>
+                <div class="lowTemp"></div>
+            </div>
+            <div class="weekIcon"></div>
+        </div>
+    </div>
 </body>
 </html>
