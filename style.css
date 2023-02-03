@@ -1,11 +1,80 @@
+@font-face {
+    font-family: scifi;
+    src: url(./fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
+}
+
 body{
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: scifi;
 }
 
 #mainBackground{
+    position: absolute;
+    z-index: -1;
     height: 100vh;
     width: 100vw;
     background-image: url(./images/City.jpeg);
     background-position: center;
     background-size: cover;
 }
+
+
+#weatherContent{
+    display: flex;
+    height: 70vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vh;
+}
+
+#general,#time,#specifics{
+    outline: 1px solid black;
+}
+
+#general{
+    display: flex;
+    width: 20vw;
+    flex-direction: column;
+}
+
+#time{
+    width: 65vw;
+}
+
+#specifics{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 15vw;
+    gap: 30px;
+}
+
+#feelsLike,#humidity,#rain,#wind{
+    display: flex;
+    gap: 8px;
+}
+
+.specTemp,.specHumid,.specRain,.specWind{
+    margin-top: 5px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.specIcon{
+    height: 7vh;
+    filter: invert(100%) sepia(9%) saturate(25%) hue-rotate(333deg) brightness(106%) contrast(100%);
+}
+
+
+
+#weatherForecast{
+    display: flex;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 5vh;
+}
+
