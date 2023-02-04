@@ -9,6 +9,7 @@ body{
     flex-direction: column;
     color: white;
     font-family: scifi;
+    
 }
 
 #mainBackground{
@@ -19,28 +20,102 @@ body{
     background-image: url(./images/City.jpeg);
     background-position: center;
     background-size: cover;
+    filter: brightness(70%);
 }
 
 
 #weatherContent{
     display: flex;
-    height: 70vh;
+    height: 57vh;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 5vh;
+    margin-bottom: 2vh;
 }
 
-#general,#time,#specifics{
-    outline: 1px solid black;
-}
 
 #general{
     display: flex;
-    width: 20vw;
+    width: 17vw;
     flex-direction: column;
 }
 
+#location{
+    font-size: 24px;
+    margin-bottom: 7vh;
+}
+
+#genCondition{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+#genTemp{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+#units{
+    appearance: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: scifi;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    width: 8vw;
+    text-align: left;
+    padding: 0;
+}
+
+#genIcon{
+    width: auto;
+    height: 20vh;
+    filter: invert(100%) sepia(9%) saturate(25%) hue-rotate(333deg) brightness(106%) contrast(100%);
+    margin-bottom: 15px;
+}
+
+#searchBar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+}
+
+
+#searchLocation{
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 700;
+}
+
+#searchLocation::placeholder{
+    color: white;
+    opacity: 1;
+}
+
+#searchButton{
+    width: 30px;
+    height: 30px;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    border:none;
+}
+#searchIcon{
+    height: 5vh;
+    filter: invert(100%) sepia(9%) saturate(25%) hue-rotate(333deg) brightness(106%) contrast(100%);
+}
+
 #time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
     width: 65vw;
 }
 
@@ -49,7 +124,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    width: 15vw;
+    width: 17vw;
     gap: 30px;
 }
 
@@ -72,9 +147,36 @@ body{
 
 
 #weatherForecast{
-    display: flex;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);  
     padding-left: 5vw;
     padding-right: 5vw;
-    padding-bottom: 5vh;
+    
 }
 
+.weekday{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.day{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.highTemp{
+    font-size: 26px;
+}
+
+.lowTemp{
+    font-size: 16px;
+}
+
+.weekIcon{
+    height: 10vh;
+    width: auto;
+    filter: invert(100%) sepia(9%) saturate(25%) hue-rotate(333deg) brightness(106%) contrast(100%);
+}
