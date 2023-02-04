@@ -12,14 +12,18 @@
     <div id="mainBackground"></div>
     <div id="weatherContent">
         <div id="general">
-            <div></div>
-            <div id="location"></div>
-            <div id="genTemp"></div>
+            <div id="location">New York City</div>
+            <div id="genCondition">Snowing</div>
+            <div id="genTemp">60 °F</div>
             <button id="units">Display °C/°F</button>
-            <div id="genIcon"></div>
+            <div>
+                <img src="./images/snow.svg" alt="" id="genIcon">
+            </div>
             <div id="searchBar">
-                <input type="text" placeholder="Search Location">
-                <button id="searchButton"></button>
+                <input type="text" placeholder="Search Location" id="searchLocation">
+                <button id="searchButton">
+                    <img src="./images/search.svg" alt="search-button" id="searchIcon">
+                </button>
             </div>
         </div>
         <div id="time">
@@ -31,7 +35,7 @@
                 <img src="./images/thermometer.svg" class="specIcon" alt="thermometer">
                 <div>
                     <div class="specText">Feels Like</div>
-                    <div class="specTemp">60°F</div>
+                    <div class="specTemp">60 °F</div>
                 </div>
             </div>
             <div id="humidity">
@@ -59,61 +63,74 @@
     </div>
     <div id="weatherForecast">
         <div class="weekday">
-            <div>Sunday</div>
+            <div class="day">Sunday</div>
             <div class="hiLoTemp">
                 <div class="highTemp"></div>
                 <div class="lowTemp"></div>
             </div>
-            <div class="weekIcon"></div>
-            <div class="hiLoTemp"></div>
+            <div>
+                <img src="" alt="" class="weekIcon">
+            </div>
         </div>
         <div class="weekday">
-            <div>Monday</div>
+            <div class="day">Monday</div>
             <div class="hiLoTemp">
-                <div class="highTemp"></div>
-                <div class="lowTemp"></div>
+                <div class="highTemp">60 °F</div>
+                <div class="lowTemp">60 °F</div>
             </div>
-            <div class="weekIcon"></div>
+            <div>
+                <img src="./images/snow.svg" alt="" class="weekIcon">
+            </div>
         </div>
         <div class="weekday">
-            <div>Tuesday</div>
+            <div class="day">Tuesday</div>
             <div class="hiLoTemp">
                 <div class="highTemp"></div>
                 <div class="lowTemp"></div>
             </div>
-            <div class="weekIcon"></div>
+            <div>
+                <img src="" alt="" class="weekIcon">
+            </div>
         </div>
         <div class="weekday">
-            <div>Wednesday</div>
+            <div class="day">Wednesday</div>
             <div class="hiLoTemp">
                 <div class="highTemp"></div>
                 <div class="lowTemp"></div>
             </div>
-            <div class="weekIcon"></div>
+            <div>
+                <img src="" alt="" class="weekIcon">
+            </div>
         </div>
         <div class="weekday">
-            <div>Thursday</div>
+            <div class="day">Thursday</div>
             <div class="hiLoTemp">
                 <div class="highTemp"></div>
                 <div class="lowTemp"></div>
             </div>
-            <div class="weekIcon"></div>
+            <div>
+                <img src="" alt="" class="weekIcon">
+            </div>
         </div>
         <div class="weekday">
-            <div>Friday</div>
+            <div class="day">Friday</div>
             <div class="hiLoTemp">
                 <div class="highTemp"></div>
                 <div class="lowTemp"></div>
             </div>
-            <div class="weekIcon"></div>
+            <div>
+                <img src="" alt="" class="weekIcon">
+            </div>
         </div>
         <div class="weekday">
-            <div>Saturday</div>
+            <div class="day">Saturday</div>
             <div class="hiLoTemp">
                 <div class="highTemp"></div>
                 <div class="lowTemp"></div>
             </div>
-            <div class="weekIcon"></div>
+            <div>
+                <img src="" alt="" class="weekIcon">
+            </div>
         </div>
     </div>
 </body>
