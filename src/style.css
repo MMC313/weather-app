@@ -1,0 +1,203 @@
+@font-face {
+    font-family: scifi;
+    src: url(./fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
+}
+
+body{
+    margin: 0;
+    color: white;
+    font-family: scifi;
+    
+    
+}
+
+#wrapper{
+}
+
+
+#mainBackground{
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./images/City.jpeg);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(60%);
+}
+
+
+#weatherContent{
+    display: flex;
+    height: 57vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+
+#general{
+    display: flex;
+    width: 17vw;
+    flex-direction: column;
+}
+
+#location{
+    font-size: 24px;
+    margin-bottom: 7vh;
+    white-space:nowrap;
+}
+
+#genCondition{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+#genTemp{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+#unitBtn{
+    appearance: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: scifi;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    width: 8vw;
+    text-align: left;
+    padding: 0;
+}
+
+.genIcon{
+    width: auto;
+    height: 20vh;
+    filter: invert(100%) sepia(9%) saturate(25%) hue-rotate(333deg) brightness(106%) contrast(100%);
+    margin-bottom: 5px;
+}
+
+
+form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#searchBar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    width: 11vw;
+}
+
+
+#searchLocation{
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    width: 75%;
+}
+
+#searchLocation::placeholder{
+    color: white;
+    opacity: 1;
+}
+
+#searchButton{
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    border:none;
+    margin: 0;
+    padding: 0;
+}
+
+
+#searchIcon{
+    width: 100%;
+    height: 100%;
+    filter: invert(100%) sepia(9%) saturate(25%) hue-rotate(333deg) brightness(106%) contrast(100%);
+}
+
+#time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    width: 65vw;
+}
+
+#specifics{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 17vw;
+    gap: 30px;
+}
+
+#feelsLike,#humidity,#rain,#wind{
+    display: flex;
+    gap: 8px;
+}
+
+.specTemp,.specHumid,.specRain,.specWind{
+    margin-top: 5px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.specIcon{
+    height: 7vh;
+    filter: invert(100%) sepia(9%) saturate(25%) hue-rotate(333deg) brightness(106%) contrast(100%);
+}
+
+
+
+#weatherForecast{
+    margin-top: 40px;
+    display: flex;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    justify-content: space-between;
+  
+   
+    
+}
+
+.weekday{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+   
+}
+
+.day{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.highTemp{
+    font-size: 26px;
+}
+
+.lowTemp{
+    font-size: 16px;
+}
+
+.forecastIcon{
+    height: 10vh;
+    width: auto;
+    filter: invert(100%) sepia(9%) saturate(25%) hue-rotate(333deg) brightness(106%) contrast(100%);
+}

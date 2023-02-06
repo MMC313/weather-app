@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Sci Fi Bronze';
+    src: url('SciFiBronze-Regular.eot');
+    src: local('Sci Fi Bronze'), local('SciFiBronze-Regular'),
+        url('SciFiBronze-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SciFiBronze-Regular.woff2') format('woff2'),
+        url('SciFiBronze-Regular.woff') format('woff'),
+        url('SciFiBronze-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
