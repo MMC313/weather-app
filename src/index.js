@@ -61,19 +61,19 @@ async function loadData(city,unit){
     
         switch(weather.weather[0].main){
             case "Clouds":
-                genIcon.src = '../src/images/cloudy.svg'
+                genIcon.src = './images/cloudy.svg'
                 break;
             case "Clear":
-                genIcon.src = '../src/images/sun.svg'
+                genIcon.src = './images/sun.svg'
                 break;
             case "Snow":
-                genIcon.src = '../src/images/snow.svg'
+                genIcon.src = './images/snow.svg'
                 break;
             case "Thunderstorm":
-                genIcon.src = '../src/images/thunder.svg'
+                genIcon.src = './images/thunder.svg'
                 break;
             case "Rain" || "Drizzle":
-                genIcon.src = '../src/images/rain.svg'
+                genIcon.src = './images/rain.svg'
                 break;
         }
 
@@ -97,15 +97,15 @@ async function loadData(city,unit){
             lowTemp[i].innerHTML = Math.round(forecast.daily[i].temp.min)+units;
             
             if(forecast.daily[i].weather[0].main === "Clear"){
-                forecastIcon.src = '../src/images/sun.svg'
+                forecastIcon.src = './images/sun.svg'
             }else if(forecast.daily[i].weather[0].main === "Clouds"){
-                forecastIcon.src = '../src/images/cloudy.svg'
+                forecastIcon.src = './images/cloudy.svg'
             }else if(forecast.daily[i].weather[0].main === "Rain" || forecast.daily[i].weather[0].main === "Drizzle"){
-                forecastIcon.src = '../src/images/rain.svg'
+                forecastIcon.src = './images/rain.svg'
             }else if(forecast.daily[i].weather[0].main === "Snow"){
-                forecastIcon.src = '../src/images/snow.svg'
+                forecastIcon.src = './images/snow.svg'
             }else if(forecast.daily[i].weather[0].main === "Thunderstorm"){
-                forecastIcon.src = '../src/images/thunder.svg'
+                forecastIcon.src = './images/thunder.svg'
             }
             forecastIcon.classList.add("forecastIcon")
             weekIcon[i].appendChild(forecastIcon);
