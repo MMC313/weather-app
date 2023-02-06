@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Away</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="mainBackground"></div>
+        <div id="weatherContent">
+            <div id="general">
+                <div id="location"></div>
+                <div id="genCondition"></div>
+                <div id="genTemp" class="temp"></div>
+                <button id="unitBtn">Display °C/°F</button>
+                <div id="genIconContainer"></div>
+                <div id="searchBar">
+                    <form action="">
+                        <input type="text" placeholder="Search a City" id="searchLocation">
+                        <button id="searchButton">
+                            <img src="../src/images/search.svg" alt="search-button" id="searchIcon">
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div id="time">
+                <div id="date"></div>
+                <div id="clock"></div>
+            </div>
+            <div id="specifics">
+                <div id="feelsLike">
+                    <img src="../src/images/thermometer.svg" class="specIcon" alt="thermometer">
+                    <div>
+                        <div class="specText">Feels Like</div>
+                        <div class="specTemp temp"></div>
+                    </div>
+                </div>
+                <div id="humidity">
+                    <img src="../src/images/humid.svg" class="specIcon" alt="humidity">
+                    <div>
+                        <div class="specText">Humidity</div>
+                        <div class="specHumid"></div>
+                    </div>
+                </div>
+                <div id="rain">
+                    <img src="../src/images/rain.svg" class="specIcon" alt="rain">
+                    <div>
+                        <div class="specText">Chance of Rain</div>
+                        <div class="specRain"></div>
+                    </div>
+                </div>
+                <div id="wind">
+                    <img src="../src/images/windy.svg" class="specIcon" alt="wind">
+                    <div>
+                        <div class="specText">Wind Speed</div>
+                        <div class="specWind"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="weatherForecast">
+            <div class="weekday">
+                <div class="day"></div>
+                <div class="hiLoTemp">
+                    <div class="highTemp temp"></div>
+                    <div class="lowTemp temp"></div>
+                </div>
+                <div class="weekIcon"></div>
+            </div>
+            <div class="weekday">
+                <div class="day"></div>
+                <div class="hiLoTemp">
+                    <div class="highTemp temp"></div>
+                    <div class="lowTemp temp"></div>
+                </div>
+                <div class="weekIcon"></div>
+            </div>
+            <div class="weekday">
+                <div class="day"></div>
+                <div class="hiLoTemp">
+                    <div class="highTemp temp"></div>
+                    <div class="lowTemp temp"></div>
+                </div>
+                <div class="weekIcon"></div>
+            </div>
+            <div class="weekday">
+                <div class="day"></div>
+                <div class="hiLoTemp">
+                    <div class="highTemp temp"></div>
+                    <div class="lowTemp temp"></div>
+                </div>
+                <div class="weekIcon"></div>
+            </div>
+            <div class="weekday">
+                <div class="day"></div>
+                <div class="hiLoTemp">
+                    <div class="highTemp temp"></div>
+                    <div class="lowTemp temp"></div>
+                </div>
+                <div class="weekIcon"></div>
+            </div>
+            <div class="weekday">
+                <div class="day"></div>
+                <div class="hiLoTemp">
+                    <div class="highTemp temp"></div>
+                    <div class="lowTemp temp"></div>
+                </div>
+                <div class="weekIcon"></div>
+            </div>
+            <div class="weekday">
+                <div class="day"></div>
+                <div class="hiLoTemp">
+                    <div class="highTemp temp"></div>
+                    <div class="lowTemp temp"></div>
+                </div>
+                <div class="weekIcon"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js" async></script>
+</body>
+</html>
